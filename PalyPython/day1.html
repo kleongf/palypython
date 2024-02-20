@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learn Python</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="prism.css" rel="stylesheet" />
+  </head>
+  <body> 
+     
+    
+
+    <div class="sidenav">
+        <a class="logo" href="https://www.palypython.com" target="_blank"><img src="palypythonlogo.png"></a>
+        <br>
+        <div class="dropdown">
+            <div class="dropbtn">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Select Lesson
+                </button>
+            </div>
+            <div class="dropdown-content">
+                <a href="day1.html">Day 1</a>
+                <a href="day2.html">Day 2</a>
+            </div>
+        </div>
+        <br>
+        <a href="#part1">What is Programming?</a>
+        <a href="#part2">Print</a>
+        <a href="#part3">Comments</a>
+        <a href="#part4">Structure</a>
+        <a href="#part5">Variables</a>
+
+        <a href="#part6">Input</a>
+        <a href="#part7">Numbers</a>
+        <a href="#part8">Strings</a>
+        <a href="#part9">Lists</a>
+        <a href="#part10">Dictionaries</a>
+        <a href="#part11">Quiz</a>
+    </div>
+    <div class="main">
+        <br>
+        <div class="big-title">Lesson 1</div>
+        <br>
+        <div class="small-title" id="part1">
+            What is Programming?
+        </div>
+        <div class="text">
+            Programming is creating a set of instructions for the computer to execute. 
+            Here's an example. We can tell the Python logo to draw up, down, left, and right. How do we make it draw a square?
+            Solution: We create a list of instructions to be executed chronologically.   
+        </div>
+        <div class="smallest-title">
+            Python Program Example
+        </div>
+        <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code">number1 = 20
+number2 = 10
+print("Sum: ", number1 + number2)
+
+# Output
+# Sum: 30</code></pre>
+        <div class="small-title" id="part2">
+            Print
+        </div>
+        <div class="text">
+            In Python, we can display characters in the terminal by using print(). Print is a function so whatever is inside the parentheses will be printed.
+            Characters with quotations are called strings.
+        </div>
+        <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code">print("Hello Universe!")
+            
+# Output
+# Hello Universe!</code></pre>
+        <div class="small-title" id="part3">
+            Comments
+        </div>
+        <div class="text">What if you want to write something which won’t be executed as code?</div>
+        <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code"># I am a single line comment
+print("I am executed :(")
+            
+"""
+I am a
+multiline
+comment
+"""</code></pre>
+        <div id="question-box">
+            <div id="question-element">
+                <img src="replitlogo-removebg-preview.png">
+            </div> 
+            <div id="question-element">
+                <a href="https://replit.com/@kf95053307/Problem-1#main.py" id="question-element" target="_blank">Problem 1</a>
+            </div>
+        </div>
+        <div class="smallest-title">Problem 1: Solution</div>
+        <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code"># John
+print("John")
+                        
+"""
+Hello
+World
+"""</code></pre>
+        <div class="small-title" id="part4">Structure</div>
+        <div class="text">Python uses indentation for blocks in the code, not curly braces like other languages. Tip: Make sure all indents are the same size 
+            (Recommended Size : 4 spaces)
+        </div>
+        <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code">favorite_food = "pizza"
+if favorite_food == "pizza":
+    print("Your favorite food is pizza")</code></pre>
+        <div class="small-title" id="part5">Variables</div>
+        <div class="text">Variables are used to store data values. To create a variable,
+            assign a value to the variable name. Tip: You can assign multiple variables in 1 line.
+            </div>
+            <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code">integer = 4
+string = "stringy"
+integer, string = 4, "stringy"</code></pre>
+        <div class="smallest-title">Naming Conventions</div>
+        <div class="text">
+            Use snake_case for variable names in Python.
+            <div>
+                <ul>
+                    <li>Can only contain alpha-numeric characters</li>
+                    <li>Must start with letter or underscore</li>
+                    <li>Cannot start with number</li>
+                    <li>Case-sensitive</li>
+                </ul>
+            </div>
+        </div>
+        <div class="small-title" id="part6">Input</div>
+        <div class="text">The input function, input(), allows you to receive user input. Write the prompt inside the parentheses. Bonus: Inputted values are strings by default - to receive numbers, convert the input into an integer or float.</div>
+        <pre><code class="language-python line-numbers" data-prismjs-copy="Copy Code">name = input("What is your name: ")
+print(name, "was here!")
+# Output
+# What is your name: Nobody
+# Nobody was here!
+num = int(input("Enter a number: "))</code></pre>
+        <div class="small-title" id="part11">
+            Quiz
+        </div>
+        <div id="quiz"></div>
+            <button id="submit" class="btn btn-success">Submit!</button>
+            <div id="results"></div>
+        <br>
+
+    </div>
+
+    
+    <script src="prism.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+	<script src="index.js"></script>
+    
+  </body>
+</html>
